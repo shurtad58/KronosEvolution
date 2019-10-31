@@ -1,7 +1,0 @@
-version: "2"
-services:
-  mynodeapp:
-    image: shurtad5/nodeapp
-    user: root
-    ports:
-      - "80:3000"
