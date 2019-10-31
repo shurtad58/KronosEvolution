@@ -1,0 +1,53 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "constructions";
+@import "user_posts";
+@import "construction";
+
+.navbar {
+   background: #A52A2A;
+}
+
+#navbar_brand {
+   color: white;
+   font-size: 23px;
+}
+
+#navbar_links {
+   color: white;
+   font-size: 18px;
+}
+
+#navbar_links:hover {
+   color: #FFC300;
+}
+
+#navbar_links:focus {
+   background-color: DimGrey;
+}
+
+#text_controller {
+   word-wrap: break-word;
+}
+
+#login_signup_pages {
+   color: white;
+}
+
+#bottom_links {
+   font-size: 17px;
+
+   &:hover {
+      color: lightgreen;
+   }
+    
+}
+
+strong>em,
+em>strong,
+b>i,
+i>b {
+    font-style:normal;
+    font-weight:bold;
+    text-decoration:underline;
+}
