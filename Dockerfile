@@ -6,4 +6,7 @@ COPY Gemfile /railsApp/Gemfile
 COPY Gemfile.lock /railsApp/Gemfile.lock
 RUN bundle install
 COPY . /railsApp
+EXPOSE 3000
 
+# Start the main process.
+CMD ["rails", "server", "-b", "0.0.0.0"]
