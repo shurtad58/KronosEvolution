@@ -6,7 +6,7 @@ COPY Gemfile /railsApp/Gemfile
 #COPY Gemfile.lock /railsApp/Gemfile.lock
 RUN bundle install
 COPY . /railsApp
-EXPOSE 3000
-
+#EXPOSE 3000
+RUN rails db:migrate
 # Start the main process.
-CMD ["rails", "server", "-b", "0.0.0.0"]
+#CMD ["rails", "server", "-b", "0.0.0.0"]
