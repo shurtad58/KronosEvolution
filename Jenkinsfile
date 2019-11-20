@@ -10,7 +10,7 @@ pipeline {
     stage('Build image') {
       steps {
         script {
-          app = docker.build("shurtad58/nodeapp")
+          app = docker.build("shurtad5/nodeapp")
         }
 
       }
